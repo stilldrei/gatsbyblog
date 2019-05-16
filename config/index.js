@@ -8,10 +8,10 @@ module.exports = {
   siteLanguage: 'en', // Language Tag on <html> element
   siteHeadline: 'Writing and publishing content', // Headline for schema.org JSONLD
   siteBanner: '/social/banner.jpg', // Your image for og:image tag. You can find it in the /static folder
-  favicon: 'src/favicon.png', // Your image for favicons. You can find it in the /src folder
+  favicon: 'src/dreilogo.png', // Your image for favicons. You can find it in the /src folder
   siteDescription: 'Minimal Blog with a focus on typography. Gatsby Starter powered by MDX.', // Your site description
   // author: 'LekoArts', // Author for schemaORGJSONLD
-  siteLogo: '/social/logo.png', // Image for schemaORGJSONLD
+  siteLogo: '/social/dreilogo.png', // Image for schemaORGJSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
   userTwitter: '@minimal', // Twitter Username - Optional
