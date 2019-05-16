@@ -47,7 +47,7 @@ const Contact = () => (
     <Wrapper>
       <Helmet title={`Contact | ${config.siteTitle}`} />
       <Header>
-        <Link to="/">{config.siteTitle}</Link>
+        <Link to="/">Home</Link>
       </Header>
       <Content>
         <h1>Contact</h1>

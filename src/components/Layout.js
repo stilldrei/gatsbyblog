@@ -204,7 +204,7 @@ const Layout = ({ children, customSEO }) => {
         <GlobalStyle />
         {children}
         <Footer>
-          &copy; 2019 by Andrea Veronica Mendoza. Credits to LekoArts for the <a href="https://github.com/LekoArts/gatsby-starter-minimal-blog">theme.</a> <br />
+          &copy; 2019 by Andrea Veronica Mendoza. Credits to LekoArts for the <a href="https://github.com/LekoArts/gatsby-starter-minimal-blog">starter theme.</a> <br />
            <br />
           <span>Last build: {buildTime}</span>
         </Footer>

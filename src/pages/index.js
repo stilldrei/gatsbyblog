@@ -5,6 +5,8 @@ import styled from 'styled-components'
 
 import { Layout, Article, Wrapper, Button, SectionTitle } from '../components'
 
+import pic01 from '../dreilogo.png'
+
 const Content = styled.div`
   grid-column: 2;
   box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
@@ -39,6 +41,14 @@ const Hero = styled.div`
       font-size: 1.25rem;
     }
   }
+
+  .img-logo {
+    width: 100px;
+    height: 100px;
+    margin: auto auto;
+    display: block;
+    border-radius: 5px;
+  }
 `
 
 const IndexPage = ({
@@ -49,7 +59,8 @@ const IndexPage = ({
   <Layout>
     <Wrapper>
       <Hero>
-        <h1>Hello there.</h1>
+        <img className="img-logo" src={pic01} alt="" />
+        <h1> Hello there.</h1>
         <p>
           I&apos;m Andrea Veronica Mendoza. A front-end software developer.
         </p>
