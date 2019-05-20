@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import { Layout, Article, Wrapper, Button, SectionTitle } from '../components'
 
-import pic01 from '../dreilogo.png'
+import pic01 from '../images/dreilogo.png'
 
 const Content = styled.div`
   grid-column: 2;
