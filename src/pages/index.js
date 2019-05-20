@@ -5,7 +5,6 @@ import styled from 'styled-components'
 
 import { Layout, Article, Wrapper, Button, SectionTitle } from '../components'
 
-import pic01 from '../images/dreilogo.png'
 import facebook from '../images/facebook.png'
 import twitter from '../images/twitter.png'
 import github from '../images/github.png'
@@ -76,7 +75,6 @@ const IndexPage = ({
   <Layout>
     <Wrapper>
       <Hero>
-        <img className="img-logo" src={pic01} alt="" />
         <h1> Hello there.</h1>
         <p>
           I&apos;m Andrea Veronica Mendoza. A front-end software developer.
