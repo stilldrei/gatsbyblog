@@ -30,8 +30,8 @@ const Content = styled.div`
   }
   img {
     margin: auto auto;
-    width: 100px;
-    height: 100px;
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 100%;
   }
   .name {

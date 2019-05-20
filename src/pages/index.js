@@ -6,6 +6,10 @@ import styled from 'styled-components'
 import { Layout, Article, Wrapper, Button, SectionTitle } from '../components'
 
 import pic01 from '../images/dreilogo.png'
+import facebook from '../images/facebook.png'
+import twitter from '../images/twitter.png'
+import github from '../images/github.png'
+import instagram from '../images/instagram.png'
 
 const Content = styled.div`
   grid-column: 2;
@@ -49,6 +53,11 @@ const Hero = styled.div`
     display: block;
     border-radius: 5px;
   }
+
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 `
 
 const IndexPage = ({
@@ -72,6 +81,18 @@ const IndexPage = ({
             Contact
           </Button>
         </Link> */}
+        <a href="https://www.facebook.com/iamdreimendoza">
+          <img className="media-icons" src={facebook} alt="facebook" title="https://www.facebook.com/iamdreimendoza"/>
+        </a>
+        <a href="https://www.twitter.com/dreiamendoza">
+          <img className="media-icons" src={twitter} alt="twitter" title="https://www.twitter.com/dreiamendoza"/>
+        </a>
+        <a href="https://www.instagram.com/dreia.mendoza">
+          <img className="media-icons" src={instagram} alt="instagram" title="https://www.instagram.com/dreia.mendoza"/>
+        </a>
+        <a href="https://www.github.com/dreiamendoza">
+          <img className="media-icons" src={github} alt="github" title="https://www.github.com/dreiamendoza"/>
+        </a>
       </Hero>
       <Content>
         <SectionTitle>Latest stories</SectionTitle>
