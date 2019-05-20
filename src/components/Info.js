@@ -11,7 +11,7 @@ import github from '../images/github.png'
 import instagram from '../images/instagram.png'
 
 const Wrapper = styled.div`
-  margin: 6rem auto 0 auto;
+  margin: 6rem auto 2rem auto;
   width: 100%;
   text-align: center;
   display: flex;
