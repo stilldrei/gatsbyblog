@@ -44,6 +44,12 @@ const Content = styled.div`
   .media-icons {
     width: 1.5rem;
     height: 1.5rem;
+    margin: 0 0.5rem 0 0;
+  }
+  .media-icons: hover {
+    transition: 0.3s;
+    z-index: -1;
+    background: rgba(170,168,173,0.82);
   }
 `
 

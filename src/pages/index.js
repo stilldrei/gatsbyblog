@@ -57,6 +57,14 @@ const Hero = styled.div`
   img {
     width: 2.5rem;
     height: 2.5rem;
+    border-radius: 100%;
+    margin: 0 0.5rem 0 0;
+  }
+
+  img: hover {
+    transition: 0.3s;
+    z-index: -1;
+    background: rgba(182,161,212,0.82);
   }
 `
 
