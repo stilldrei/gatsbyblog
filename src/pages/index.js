@@ -9,12 +9,12 @@ import facebook from '../images/facebook.png'
 import twitter from '../images/twitter.png'
 import github from '../images/github.png'
 import instagram from '../images/instagram.png'
+import me from '../images/me.jpg'
 
 const Content = styled.div`
   grid-column: 2;
-  box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
   padding: 3rem 6rem;
+  border-bottom: 1px solid #d4d8dd;
   @media (max-width: ${props => props.theme.breakpoints.tablet}) {
     padding: 3rem 2rem;
   }
@@ -25,45 +25,48 @@ const Content = styled.div`
 `
 
 const Hero = styled.div`
+  transition: 0.5s;
   grid-column: 2;
   padding: 3rem 2rem 6rem 2rem;
   text-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   color: ${props => props.theme.colors.grey.dark};
 
   @media (max-width: ${props => props.theme.breakpoints.phone}) {
+    transition: 0.5s;
     padding: 2rem 1rem 4rem 1rem;
+    display: block;
   }
 
   p {
-    font-size: 1.68rem;
     margin-top: -1rem;
     @media (max-width: ${props => props.theme.breakpoints.tablet}) {
-      font-size: 1.45rem;
+      font-size: 1.25rem;
+      transition: 0.5s;
     }
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
-      font-size: 1.25rem;
+      font-size: 1rem;
+      transition: 0.5s;
     }
   }
 
-  .img-logo {
-    width: 100px;
-    height: 100px;
-    margin: auto auto;
-    display: block;
-    border-radius: 5px;
+  h1 {
+    @media (max-width: ${props => props.theme.breakpoints.tablet}) {
+      transition: 0.5s;
+      font-size: 2.2rem;
+    }
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+      transition: 0.5s;
+      font-size: 1.5rem;
+    }
   }
 
   img {
-    width: 2.5rem;
-    height: 2.5rem;
+    transition: 0.5s;
+    width: 5.5rem;
+    height: 5.5rem;
     border-radius: 100%;
     margin: 0 0.5rem 0 0;
-  }
-
-  img: hover {
-    transition: 0.3s;
-    z-index: -1;
-    background: rgba(182,161,212,0.82);
+    float: right;
   }
 `
 
@@ -87,7 +90,6 @@ const MediaLinks = styled.div`
   }
 
   img: hover {
-    transition: 0.3s;
     z-index: -1;
     background: rgba(182,161,212,0.82);
   }
@@ -114,10 +116,8 @@ const IndexPage = ({
   <Layout>
     <Wrapper>
       <Hero>
-        <h1> Hello there.</h1>
-        <p>
-          I&apos;m Andrea Veronica Mendoza. A front-end software developer.
-        </p>
+        <h1> Hi, I&apos;m Drei <img src={me} alt="drei" /> </h1>
+        <p>A front-end software developer based in the Philippines.</p>
       </Hero>
       <Content>
         <SectionTitle>Latest stories</SectionTitle>

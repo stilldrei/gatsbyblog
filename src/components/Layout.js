@@ -25,19 +25,19 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${props => props.theme.fontFamily.sansSerif};
     font-size: ${props => props.theme.baseFontSize};
     h1 {
-      font-size: 3.052rem;
+      font-size: 2.5rem;
     }
     h2 {
-      font-size: 2.441rem;
+      font-size: 2rem;
     }
     h3 {
-      font-size: 1.953rem;
+      font-size: 1.5rem;
     }
     h4 {
-      font-size: 1.563rem;
+      font-size: 1.3rem;
     }
     h5 {
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
       font-size: 16px;

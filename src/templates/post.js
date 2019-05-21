@@ -9,19 +9,17 @@ import { Layout, Wrapper, Header, Subline, SEO, PrevNext, InfoShare } from '../c
 
 const Content = styled.article`
   grid-column: 2;
-  box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
   max-width: 1000px;
-  border-radius: 1rem;
   padding: 2rem 4.5rem;
   background-color: ${props => props.theme.colors.bg};
   z-index: 9000;
-  margin-top: -3rem;
   @media (max-width: ${props => props.theme.breakpoints.tablet}) {
     padding: 3rem 3rem;
   }
   @media (max-width: ${props => props.theme.breakpoints.phone}) {
     padding: 2rem 1.5rem;
   }
+  border-bottom: 1px solid #d4d8dd;
   p {
     font-size: 1.1rem;
     letter-spacing: -0.003em;
