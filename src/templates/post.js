@@ -5,8 +5,7 @@ import styled from 'styled-components'
 import kebabCase from 'lodash/kebabCase'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 
-import { Layout, Wrapper, Header, Subline, SEO, PrevNext, Info } from '../components'
-import config from '../../config'
+import { Layout, Wrapper, Header, Subline, SEO, PrevNext, InfoShare } from '../components'
 
 const Content = styled.article`
   grid-column: 2;
@@ -75,7 +74,7 @@ const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) =>
             <MDXRenderer>{postNode.code.body}</MDXRenderer>
           </PostContent>
           <PrevNext prev={prev} next={next} />
-          <Info></Info>
+          <InfoShare title={post.title} url={'https://stilldrei.netlify.com'} slug={slug + '/'}/>
         </Content>
       </Wrapper>
     </Layout>
