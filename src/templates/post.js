@@ -54,9 +54,7 @@ const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) =>
     <Layout customSEO>
       <Wrapper>
         <SEO postPath={slug} postNode={postNode} article />
-        <Header>
-          <Link to="/">Home</Link>
-        </Header>
+        <Header />
         <Content>
           <Title>{post.title}</Title>
           <Subline>

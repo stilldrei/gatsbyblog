@@ -13,7 +13,6 @@ const Content = styled.div`
   padding: 2rem 4rem;
   background-color: ${props => props.theme.colors.bg};
   z-index: 9000;
-  margin-top: -3rem;
   @media (max-width: ${props => props.theme.breakpoints.tablet}) {
     padding: 3rem 3rem;
   }
@@ -30,9 +29,7 @@ const Category = ({ pageContext: { category }, data: { allMdx } }) => {
     <Layout>
       <Wrapper>
         <Helmet title={`Category: ${category} | ${config.siteTitle}`} />
-        <Header>
-          <Link to="/">Home</Link>
-        </Header>
+        <Header />
         <Content>
           <SectionTitle>Category &ndash; {category}</SectionTitle>
           <Subline sectionTitle>

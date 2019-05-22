@@ -14,7 +14,6 @@ const Content = styled.div`
   padding: 2rem 4rem;
   background-color: ${props => props.theme.colors.bg};
   z-index: 9000;
-  margin-top: -3rem;
   @media (max-width: ${props => props.theme.breakpoints.tablet}) {
     padding: 3rem 3rem;
   }
@@ -45,9 +44,7 @@ const Contact = () => (
   <Layout>
     <Wrapper>
       <Helmet title={`Contact | ${config.siteTitle}`} />
-      <Header>
-        <Link to="/">Home</Link>
-      </Header>
+      <Header />
       <Content>
         <h1>Contact</h1>
         <p>Super cool intro text to get people contacting me! It uses Netlify's form feature.</p>
