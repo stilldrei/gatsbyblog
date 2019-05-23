@@ -1,8 +1,8 @@
 import { lighten } from 'polished'
 
 const colors = {
-  primary: '#8e24aa', // Color for buttons or links
-  primaryLight: lighten(0.05, '#8e24aa'),
+  primary: '#d02e77', // Color for buttons or links
+  primaryLight: lighten(0.05, '#d02e77'),
   bg: 'white', // Background color
   grey: {
     dark: 'rgba(0, 0, 0, 0.9)',
@@ -19,7 +19,6 @@ const transitions = {
 
 const fontSize = {
   small: '0.9rem',
-  medium: '1rem'
 }
 
 const fontFamily = {
@@ -39,7 +38,7 @@ const theme = {
   breakpoints,
   fontFamily,
   maxWidth: '1000px',
-  baseFontSize: '15px',
+  baseFontSize: '18px',
 }
 
 export default theme

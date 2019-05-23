@@ -56,7 +56,7 @@ const Content = styled.div`
   button: hover {
     transition: 0.3s;
     z-index: -1;
-    background: rgba(182,161,212,0.82);
+    background: ${props => props.theme.colors.grey.ultraLight};
   }
 `
 

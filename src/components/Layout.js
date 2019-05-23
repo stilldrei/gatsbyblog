@@ -25,19 +25,37 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${props => props.theme.fontFamily.sansSerif};
     font-size: ${props => props.theme.baseFontSize};
     h1 {
-      font-size: 2.5rem;
+      font-size: 3.052rem;
     }
     h2 {
-      font-size: 2rem;
+      font-size: 2.441rem;
     }
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.953rem;
     }
     h4 {
-      font-size: 1.3rem;
+      font-size: 1.563rem;
     }
     h5 {
-      font-size: 1rem;
+      font-size: 1.25rem;
+    }
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+      font-size: 16px;
+      h1 {
+        font-size: 2.488rem;
+      }
+      h2 {
+        font-size: 2.074rem;
+      }
+      h3 {
+        font-size: 1.728rem;
+      }
+      h4 {
+        font-size: 1.444rem;
+      }
+      h5 {
+        font-size: 1.2rem;
+      }
     }
   }
   body {
@@ -186,9 +204,7 @@ const Layout = ({ children, customSEO }) => {
         <GlobalStyle />
         {children}
         <Footer>
-          &copy; 2019 by Andrea Veronica Mendoza. Credits to LekoArts for the <a href="https://github.com/LekoArts/gatsby-starter-minimal-blog">starter theme.</a> <br />
-           <br />
-          <span>Last build: {buildTime}</span>
+          &copy; 2019 by Andrea Veronica Mendoza. Credits to LekoArts for the <a href="https://github.com/LekoArts/gatsby-starter-minimal-blog">starter theme.</a>
         </Footer>
       </>
     </ThemeProvider>
