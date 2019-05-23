@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import { Layout, Article, Wrapper, Button, SectionTitle } from '../components'
+import { Layout, Article, Wrapper, Button, SectionTitle, Brand } from '../components'
 
 import facebook from '../images/facebook.png'
 import twitter from '../images/twitter.png'
@@ -91,20 +91,11 @@ const MediaLinks = styled.div`
 
   img: hover {
     z-index: -1;
-    background: rgba(182,161,212,0.82);
+    background: ${props => props.theme.colors.grey.ultraLight};
   }
 
   p {
     color: ${props => props.theme.colors.grey.light};
-    .span-bold {
-      text-transform: uppercase;
-      font-weight: bold;
-      color: ${props => props.theme.colors.grey.default}; 
-    }
-    .span-regular {
-      text-transform: uppercase;
-      color: ${props => props.theme.colors.grey.default};
-    }
   }
 `
 
@@ -134,7 +125,8 @@ const IndexPage = ({
         ))}
       </Content>
       <MediaLinks>
-        <p> <span className="span-regular">still</span><span className="span-bold">drei</span> - andimendozait@gmail.com </p>
+        <Brand />
+        <p> andimendozait@gmail.com </p>
         <a href="https://www.facebook.com/iamdreimendoza">
           <img className="media-icons" src={facebook} alt="facebook" title="https://www.facebook.com/iamdreimendoza"/>
         </a>
