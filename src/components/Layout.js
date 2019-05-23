@@ -39,24 +39,6 @@ const GlobalStyle = createGlobalStyle`
     h5 {
       font-size: 1rem;
     }
-    @media (max-width: ${props => props.theme.breakpoints.phone}) {
-      font-size: 16px;
-      h1 {
-        font-size: 2.488rem;
-      }
-      h2 {
-        font-size: 2.074rem;
-      }
-      h3 {
-        font-size: 1.728rem;
-      }
-      h4 {
-        font-size: 1.444rem;
-      }
-      h5 {
-        font-size: 1.2rem;
-      }
-    }
   }
   body {
     background: ${props => props.theme.colors.bg};
