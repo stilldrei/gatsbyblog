@@ -18,15 +18,15 @@ const Post = styled.article`
   }
 `
 
-const Title = styled.h2`
+const Title = styled.h3`
   position: relative;
-  text-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   margin-bottom: 0.75rem;
   a {
     color: ${props => props.theme.colors.grey.dark};
     &:hover {
       color: ${props => props.theme.colors.primaryLight};
     }
+    text-decoration: underline;
   }
 `
 
