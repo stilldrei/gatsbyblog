@@ -29,15 +29,11 @@ const MediaLinks = styled.div`
     padding: 0.3rem;
     @media (max-width: ${props => props.theme.breakpoints.tablet}) {
       transition: 0.5s;
-      width: 1.5rem;
-      height: 1.5rem;
-      margin: 0 1rem 0 1rem;
+      margin: 0 1.5rem 0 1.5rem;
     }
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
       transition: 0.5s;
-      width: 1.15rem;
-      height: 1.15rem;
-      margin: 0 0.25rem 0 0.25rem;
+      margin: 0 2.2rem 0 2.2rem;
     }
   }
 
