@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import { Layout, Wrapper, Header, Subline, Article, SectionTitle } from '../components'
+import { Layout, Wrapper, Header, Article } from '../components'
 import config from '../../config'
 
 const Content = styled.div`
@@ -21,6 +21,21 @@ const Content = styled.div`
   }
 `
 
+const Subline = styled.div`
+  color: ${props => props.theme.colors.grey.light};
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+`
+
+const BreadCrumbs = styled.div`
+  color: ${props => props.theme.colors.grey.ultraLight};
+  font-size: ${props => props.theme.fontSize.small};
+  span {
+    padding: 0 0 0 0.3rem;
+  }
+`
+
+
 const Category = ({ pageContext: { category }, data: { allMdx } }) => {
   const { edges, totalCount } = allMdx
   const subline = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${category}"`
@@ -31,8 +46,13 @@ const Category = ({ pageContext: { category }, data: { allMdx } }) => {
         <Helmet title={`Category: ${category} | ${config.siteTitle}`} />
         <Header />
         <Content>
-          <SectionTitle>Category &ndash; {category}</SectionTitle>
-          <Subline sectionTitle>
+          <BreadCrumbs>
+            <Link to="/"> Home </Link> / 
+            <Link to="/blog"> Blog </Link> /
+            <Link to="/categories"> Categories </Link> /
+            <span> {category} </span>
+          </BreadCrumbs>
+          <Subline>
             {subline} (See <Link to="/categories">all categories</Link>)
           </Subline>
           {edges.map(post => (

@@ -28,6 +28,14 @@ const Title = styled.h3`
   margin-bottom: 0.75rem;
 `
 
+const BreadCrumbs = styled.div`
+  color: ${props => props.theme.colors.grey.ultraLight};
+  font-size: ${props => props.theme.fontSize.small};
+  span {
+    padding: 0 0 0 0.3rem;
+  }
+`
+
 const Category = ({
   data: {
     allMdx: { group },
@@ -38,7 +46,11 @@ const Category = ({
       <Helmet title={`Categories | ${config.siteTitle}`} />
       <Header />
       <Content>
-        <SectionTitle>Categories</SectionTitle>
+        <BreadCrumbs>
+          <Link to="/"> Home </Link> / 
+          <Link to="/blog"> Blog </Link> /
+          <span> Categories </span>
+        </BreadCrumbs>
         {group.map(category => (
           <Title key={category.fieldValue}>
             <Link to={`/categories/${kebabCase(category.fieldValue)}`}>{category.fieldValue}</Link> (

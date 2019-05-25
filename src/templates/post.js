@@ -47,6 +47,14 @@ const PostContent = styled.div`
   margin-top: 4rem;
 `
 
+const BreadCrumbs = styled.div`
+  color: ${props => props.theme.colors.grey.ultraLight};
+  font-size: ${props => props.theme.fontSize.small};
+  span {
+    padding: 0 0 0 0.3rem;
+  }
+`
+
 const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) => {
   const post = postNode.frontmatter
 
@@ -56,6 +64,11 @@ const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) =>
         <SEO postPath={slug} postNode={postNode} article />
         <Header />
         <Content>
+          <BreadCrumbs>
+            <Link to="/"> Home </Link> / 
+            <Link to="/blog"> Blog </Link> /
+            <span> {post.title} </span>
+          </BreadCrumbs>
           <Title>{post.title}</Title>
           <Subline>
             {post.date} &mdash; {postNode.timeToRead} Min Read &mdash; In{' '}
