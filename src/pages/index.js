@@ -10,20 +10,6 @@ import instagram from '../assets/images/instagram.png'
 import linkedin from '../assets/images/linkedin.png'
 import spotify from '../assets/images/spotify.png'
 
-
-const Content = styled.div`
-  grid-column: 2;
-  padding: 3rem 6rem;
-  border-bottom: 1px solid #d4d8dd;
-  @media (max-width: ${props => props.theme.breakpoints.tablet}) {
-    padding: 3rem 2rem;
-  }
-  @media (max-width: ${props => props.theme.breakpoints.phone}) {
-    padding: 2rem 1.5rem;
-  }
-  overflow: hidden;
-`
-
 const MediaLinks = styled.div`
   grid-column: 2;
   padding: 2rem;
@@ -62,7 +48,7 @@ const MediaLinks = styled.div`
 
 const IndexPage = ({}) => (
   <Layout>
-    <Wrapper>
+    <Wrapper> 
       <Header />
       <Hero />
       <MediaLinks>

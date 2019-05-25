@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 import { Wrapper } from '../components'
 
@@ -46,43 +47,15 @@ const Container = styled.div`
     width: 5.5rem;
     height: 5.5rem;
     border-radius: 100%;
-    margin: 0 0.5rem 0 0;
-  }
-`
-
-const MediaLinks = styled.div`
-  grid-column: 2;
-  padding: 2rem;
-  text-align: center;
-  .img-logo {
-    width: 100px;
-    height: 100px;
-    margin: auto auto;
-    display: block;
-    border-radius: 5px;
   }
 
-  img {
-    width: 2rem;
-    height: 2rem;
-    margin: 0 2rem 0 2rem;
-    padding: 0.3rem;
-    @media (max-width: ${props => props.theme.breakpoints.tablet}) {
-      transition: 0.5s;
-      width: 1.5rem;
-      height: 1.5rem;
-      margin: 0 1rem 0 1rem;
+  ul{
+    list-style-type: none;
+    text-align: center;
+    li {
+      margin: 0 1.5rem 0 0;
+      display: inline-block;
     }
-    @media (max-width: ${props => props.theme.breakpoints.phone}) {
-      transition: 0.5s;
-      width: 1.15rem;
-      height: 1.15rem;
-      margin: 0 0.25rem 0 0.25rem;
-    }
-  }
-
-  p {
-    color: ${props => props.theme.colors.grey.light};
   }
 `
 
@@ -91,6 +64,17 @@ const Hero = ({}) => (
         <img src={me} alt="drei" /> 
         <h1> Hi, I&apos;m Drei </h1>
         <p>A front-end software developer based in the Philippines.</p>
+        <ul>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link to="/projects">Projects</Link>
+          </li>
+        </ul>
     </Container>
 )
 
