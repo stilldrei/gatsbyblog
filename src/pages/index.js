@@ -1,15 +1,15 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import { Layout, Article, Wrapper, Button, SectionTitle, Brand } from '../components'
+import { Layout, Wrapper, Header, Hero } from '../components'
 
-import facebook from '../images/facebook.png'
-import twitter from '../images/twitter.png'
-import github from '../images/github.png'
-import instagram from '../images/instagram.png'
-import me from '../images/me.jpg'
+import facebook from '../assets/images/facebook.png'
+import twitter from '../assets/images/twitter.png'
+import github from '../assets/images/github.png'
+import instagram from '../assets/images/instagram.png'
+import linkedin from '../assets/images/linkedin.png'
+import spotify from '../assets/images/spotify.png'
+
 
 const Content = styled.div`
   grid-column: 2;
@@ -22,51 +22,6 @@ const Content = styled.div`
     padding: 2rem 1.5rem;
   }
   overflow: hidden;
-`
-
-const Hero = styled.div`
-  transition: 0.5s;
-  grid-column: 2;
-  padding: 3rem 2rem 6rem 2rem;
-  color: ${props => props.theme.colors.grey.dark};
-
-  @media (max-width: ${props => props.theme.breakpoints.phone}) {
-    transition: 0.5s;
-    padding: 2rem 1rem 4rem 1rem;
-    display: block;
-  }
-
-  p {
-    margin-top: -1rem;
-    @media (max-width: ${props => props.theme.breakpoints.tablet}) {
-      font-size: 1.25rem;
-      transition: 0.5s;
-    }
-    @media (max-width: ${props => props.theme.breakpoints.phone}) {
-      font-size: 1rem;
-      transition: 0.5s;
-    }
-  }
-
-  h1 {
-    @media (max-width: ${props => props.theme.breakpoints.tablet}) {
-      transition: 0.5s;
-      font-size: 2.2rem;
-    }
-    @media (max-width: ${props => props.theme.breakpoints.phone}) {
-      transition: 0.5s;
-      font-size: 1.5rem;
-    }
-  }
-
-  img {
-    transition: 0.5s;
-    width: 5.5rem;
-    height: 5.5rem;
-    border-radius: 100%;
-    margin: 0 0.5rem 0 0;
-    float: right;
-  }
 `
 
 const MediaLinks = styled.div`
@@ -82,15 +37,22 @@ const MediaLinks = styled.div`
   }
 
   img {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 100%;
-    margin: 0 0.5rem 0 0;
-  }
-
-  img: hover {
-    z-index: -1;
-    background: ${props => props.theme.colors.grey.ultraLight};
+    width: 2rem;
+    height: 2rem;
+    margin: 0 2rem 0 2rem;
+    padding: 0.3rem;
+    @media (max-width: ${props => props.theme.breakpoints.tablet}) {
+      transition: 0.5s;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin: 0 1rem 0 1rem;
+    }
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+      transition: 0.5s;
+      width: 1.15rem;
+      height: 1.15rem;
+      margin: 0 0.25rem 0 0.25rem;
+    }
   }
 
   p {
@@ -98,45 +60,29 @@ const MediaLinks = styled.div`
   }
 `
 
-const IndexPage = ({
-  data: {
-    allMdx: { edges: postEdges },
-  },
-}) => (
+const IndexPage = ({}) => (
   <Layout>
     <Wrapper>
-      <Hero>
-        <h1> Hi, I&apos;m Drei <img src={me} alt="drei" /> </h1>
-        <p>A front-end software developer based in the Philippines.</p>
-      </Hero>
-      <Content>
-        <SectionTitle>Latest stories</SectionTitle>
-        {postEdges.map(post => (
-          <Article
-            title={post.node.frontmatter.title}
-            date={post.node.frontmatter.date}
-            excerpt={post.node.excerpt}
-            timeToRead={post.node.timeToRead}
-            slug={post.node.fields.slug}
-            categories={post.node.frontmatter.categories}
-            key={post.node.fields.slug}
-          />
-        ))}
-      </Content>
+      <Header />
+      <Hero />
       <MediaLinks>
-        <Brand />
-        <p> andimendozait@gmail.com </p>
-        <a href="https://www.facebook.com/iamdreimendoza">
+        <a href="https://www.facebook.com/iamdreimendoza" target="_blank" rel="noopener noreferrer">
           <img className="media-icons" src={facebook} alt="facebook" title="https://www.facebook.com/iamdreimendoza"/>
         </a>
-        <a href="https://www.twitter.com/dreiamendoza">
+        <a href="https://www.twitter.com/dreiamendoza" target="_blank" rel="noopener noreferrer">
           <img className="media-icons" src={twitter} alt="twitter" title="https://www.twitter.com/dreiamendoza"/>
         </a>
-        <a href="https://www.instagram.com/dreia.mendoza">
+        <a href="https://www.instagram.com/dreia.mendoza" target="_blank" rel="noopener noreferrer">
           <img className="media-icons" src={instagram} alt="instagram" title="https://www.instagram.com/dreia.mendoza"/>
         </a>
-        <a href="https://www.github.com/dreiamendoza">
+        <a href="https://www.github.com/dreiamendoza" target="_blank" rel="noopener noreferrer">
           <img className="media-icons" src={github} alt="github" title="https://www.github.com/dreiamendoza"/>
+        </a>
+        <a href="http://linkedin.com/in/andrea-veronica-mendoza-5869b6139" target="_blank" rel="noopener noreferrer">
+          <img className="media-icons" src={linkedin} alt="github" title="http://linkedin.com/in/andrea-veronica-mendoza-5869b6139"/>
+        </a>
+        <a href="https://open.spotify.com/user/andimendozait?si=2vibpeZESTCLfy-45VfgIQ" target="_blank" rel="noopener noreferrer">
+          <img className="media-icons" src={spotify} alt="github" title="https://open.spotify.com/user/andimendozait?si=2vibpeZESTCLfy-45VfgIQ"/>
         </a>
       </MediaLinks>
     </Wrapper>
@@ -144,32 +90,3 @@ const IndexPage = ({
 )
 
 export default IndexPage
-
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    allMdx: PropTypes.shape({
-      edges: PropTypes.array.isRequired,
-    }),
-  }).isRequired,
-}
-
-export const IndexQuery = graphql`
-  query IndexQuery {
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "MM/DD/YYYY")
-            categories
-          }
-          excerpt(pruneLength: 200)
-          timeToRead
-        }
-      }
-    }
-  }
-`

@@ -9,6 +9,7 @@ import Subline from './Subline'
 import Wrapper from './Wrapper'
 import InfoShare from './InfoShare'
 import Brand from './Brand'
+import Hero from './Hero'
 
 export {
     Article,
@@ -21,5 +22,6 @@ export {
     Subline,
     Wrapper,
     InfoShare,
-    Brand
+    Brand,
+    Hero
 }

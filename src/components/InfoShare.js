@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import me from '../images/me.jpg'
-import facebookIcon from '../images/facebook.png'
-import twitterIcon from '../images/twitter.png'
+import me from '../assets/images/me.jpg'
+import facebookIcon from '../assets/images/facebook.png'
+import twitterIcon from '../assets/images/twitter.png'
 
 const Wrapper = styled.div`
   margin: 6rem auto 2rem auto;
