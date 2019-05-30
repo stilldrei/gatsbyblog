@@ -46,6 +46,15 @@ const AboutPage = ({}) => (
                 <p> Portfolio and blog to document experiences in IT and learnings. </p>
             </li>
             <li> <a 
+                href="https://dreiamendoza.netlify.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                 My Landing Page
+                </a>
+                <p> Landing page to display my experiences and works. </p>
+            </li>
+            <li> <a 
                 href="https://github.com/dreiamendoza/solarsystem"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -54,9 +63,6 @@ const AboutPage = ({}) => (
                 </a>
                 <p> Informational site about the solar system celestial objects. 
                     Self-study about Angular 7 fundamentals such as routing, data-binding, and module recycling. </p>
-            </li>
-            <li> G***** (WIP - upcoming)
-                <p> Current project in conception phase. </p>
             </li>
         </ol>
       </Content>
