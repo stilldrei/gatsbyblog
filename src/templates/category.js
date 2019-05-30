@@ -53,7 +53,7 @@ const Category = ({ pageContext: { category }, data: { allMdx } }) => {
             <span> {category} </span>
           </BreadCrumbs>
           <Subline>
-            {subline} (See <Link to="/categories">all categories</Link>)
+            {subline}
           </Subline>
           {edges.map(post => (
             <Article
