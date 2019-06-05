@@ -63,7 +63,7 @@ const Hero = ({}) => (
     <Container>
         <img src={me} alt="drei" /> 
         <h1> Hi, I&apos;m Drei </h1>
-        <p>A front-end software developer based in the Philippines.</p>
+        <p>A software developer based in the Philippines.</p>
         <ul>
           <li>
             <Link to="/about">About</Link>
