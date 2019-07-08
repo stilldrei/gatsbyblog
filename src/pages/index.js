@@ -48,17 +48,17 @@ const IndexPage = ({}) => (
       <Header />
       <Hero />
       <MediaLinks>
-        <a href="https://www.facebook.com/iamdreimendoza" target="_blank" rel="noopener noreferrer">
-          <img className="media-icons" src={facebook} alt="facebook" title="https://www.facebook.com/iamdreimendoza"/>
+        <a href="https://www.facebook.com/stilldrei" target="_blank" rel="noopener noreferrer">
+          <img className="media-icons" src={facebook} alt="facebook" title="https://www.facebook.com/stilldrei"/>
         </a>
-        <a href="https://www.twitter.com/dreiamendoza" target="_blank" rel="noopener noreferrer">
-          <img className="media-icons" src={twitter} alt="twitter" title="https://www.twitter.com/dreiamendoza"/>
+        <a href="https://www.twitter.com/stilldrei" target="_blank" rel="noopener noreferrer">
+          <img className="media-icons" src={twitter} alt="twitter" title="https://www.twitter.com/stilldrei"/>
         </a>
-        <a href="https://www.instagram.com/dreia.mendoza" target="_blank" rel="noopener noreferrer">
-          <img className="media-icons" src={instagram} alt="instagram" title="https://www.instagram.com/dreia.mendoza"/>
+        <a href="https://www.instagram.com/still_drei" target="_blank" rel="noopener noreferrer">
+          <img className="media-icons" src={instagram} alt="instagram" title="https://www.instagram.com/still_drei"/>
         </a>
-        <a href="https://www.github.com/dreiamendoza" target="_blank" rel="noopener noreferrer">
-          <img className="media-icons" src={github} alt="github" title="https://www.github.com/dreiamendoza"/>
+        <a href="https://www.github.com/stilldrei" target="_blank" rel="noopener noreferrer">
+          <img className="media-icons" src={github} alt="github" title="https://www.github.com/stilldrei"/>
         </a>
         <a href="http://linkedin.com/in/andrea-veronica-mendoza-5869b6139" target="_blank" rel="noopener noreferrer">
           <img className="media-icons" src={linkedin} alt="github" title="http://linkedin.com/in/andrea-veronica-mendoza-5869b6139"/>
