@@ -62,17 +62,17 @@ const Info = ({}) => (
       <Content>
         <span className="name">Andrea Veronica Mendoza</span>
         <p className="bio">Software Engineer - Front-end Developer</p>
-        <a href="https://www.facebook.com/iamdreimendoza">
-          <img className="media-icons" src={facebook} alt="facebook" title="https://www.facebook.com/iamdreimendoza"/>
+        <a href="https://www.facebook.com/stilldrei">
+          <img className="media-icons" src={facebook} alt="facebook" title="https://www.facebook.com/stilldrei"/>
         </a>
-        <a href="https://www.twitter.com/dreiamendoza">
-          <img className="media-icons" src={twitter} alt="twitter" title="https://www.twitter.com/dreiamendoza"/>
+        <a href="https://www.twitter.com/stilldrei">
+          <img className="media-icons" src={twitter} alt="twitter" title="https://www.twitter.com/stilldrei"/>
         </a>
-        <a href="https://www.instagram.com/dreia.mendoza">
-          <img className="media-icons" src={instagram} alt="instagram" title="https://www.instagram.com/dreia.mendoza"/>
+        <a href="https://www.instagram.com/still_drei">
+          <img className="media-icons" src={instagram} alt="instagram" title="https://www.instagram.com/still_drei"/>
         </a>
-        <a href="https://www.github.com/dreiamendoza">
-          <img className="media-icons" src={github} alt="github" title="https://www.github.com/dreiamendoza"/>
+        <a href="https://www.github.com/stilldrei">
+          <img className="media-icons" src={github} alt="github" title="https://www.github.com/stilldrei"/>
         </a>
       </Content>
   </Wrapper>
